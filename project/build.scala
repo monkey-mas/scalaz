@@ -27,6 +27,8 @@ import org.scalajs.sbtplugin.ScalaJSPlugin
 import org.scalajs.sbtplugin.ScalaJSPlugin.autoImport._
 import org.scalajs.sbtplugin.cross._
 
+import pl.project13.scala.sbt.JmhPlugin
+
 object build extends Build {
   type Sett = Def.Setting[_]
 
@@ -249,8 +251,10 @@ object build extends Build {
         jsProjects.foldLeft(inAnyProject)((acc, a) => acc -- inProjects(a))
       }
     ) ++ Defaults.packageTaskSettings(packageDoc in Compile, (unidoc in Compile).map(_.flatMap(Path.allSubpaths))),
-    aggregate = jvmProjects ++ jsProjects
+    aggregate = jvmProjects ++ jsProjects,
+    dependencies = Seq(coreJVM, iterateeJVM, concurrent)
   )
+  .enablePlugins(JmhPlugin)
 
   lazy val rootJS = Project(
     "rootJS",

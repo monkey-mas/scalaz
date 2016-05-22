@@ -1,0 +1,1544 @@
+[info] Loading project definition from /home/mas/Desktop/git/dev/scalaz/project
+[info] Set current project to scalaz (in build file:/home/mas/Desktop/git/dev/scalaz/)
+[[33mwarn] Credentials file /home/mas/.ivy2/.credentials does not exist
+[[33mwarn] Credentials file /home/mas/.ivy2/.credentials does not exist
+[[33mwarn] Credentials file /home/mas/.ivy2/.credentials does not exist
+[[33mwarn] Credentials file /home/mas/.ivy2/.credentials does not exist
+[[33mwarn] Credentials file /home/mas/.ivy2/.credentials does not exist
+[info] Compiling 1 Scala source to /home/mas/Desktop/git/dev/scalaz/core/jvm/target/scala-2.10/classes...
+[info] Compiling 1 Scala source to /home/mas/Desktop/git/dev/scalaz/target/scala-2.10/classes...
+[info] Running org.openjdk.jmh.Main -i 50 -wi 30 -f 1 -t 1 -bm avgt
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.delete1M_Asc
+[info] 
+[info] # Run progress: 0.00% complete, ETA 00:20:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.319 s/op
+[info] # Warmup Iteration   2: 0.301 s/op
+[info] # Warmup Iteration   3: 0.260 s/op
+[info] # Warmup Iteration   4: 0.256 s/op
+[info] # Warmup Iteration   5: 0.233 s/op
+[info] # Warmup Iteration   6: 0.211 s/op
+[info] # Warmup Iteration   7: 0.234 s/op
+[info] # Warmup Iteration   8: 0.210 s/op
+[info] # Warmup Iteration   9: 0.232 s/op
+[info] # Warmup Iteration  10: 0.202 s/op
+[info] # Warmup Iteration  11: 0.204 s/op
+[info] # Warmup Iteration  12: 0.212 s/op
+[info] # Warmup Iteration  13: 0.228 s/op
+[info] # Warmup Iteration  14: 0.239 s/op
+[info] # Warmup Iteration  15: 0.232 s/op
+[info] # Warmup Iteration  16: 0.235 s/op
+[info] # Warmup Iteration  17: 0.214 s/op
+[info] # Warmup Iteration  18: 0.233 s/op
+[info] # Warmup Iteration  19: 0.230 s/op
+[info] # Warmup Iteration  20: 0.231 s/op
+[info] # Warmup Iteration  21: 0.223 s/op
+[info] # Warmup Iteration  22: 0.230 s/op
+[info] # Warmup Iteration  23: 0.263 s/op
+[info] # Warmup Iteration  24: 0.225 s/op
+[info] # Warmup Iteration  25: 0.219 s/op
+[info] # Warmup Iteration  26: 0.221 s/op
+[info] # Warmup Iteration  27: 0.205 s/op
+[info] # Warmup Iteration  28: 0.217 s/op
+[info] # Warmup Iteration  29: 0.223 s/op
+[info] # Warmup Iteration  30: 0.219 s/op
+[info] Iteration   1: 0.219 s/op
+[info] Iteration   2: 0.254 s/op
+[info] Iteration   3: 0.241 s/op
+[info] Iteration   4: 0.214 s/op
+[info] Iteration   5: 0.212 s/op
+[info] Iteration   6: 0.233 s/op
+[info] Iteration   7: 0.243 s/op
+[info] Iteration   8: 0.295 s/op
+[info] Iteration   9: 0.227 s/op
+[info] Iteration  10: 0.354 s/op
+[info] Iteration  11: 0.242 s/op
+[info] Iteration  12: 0.216 s/op
+[info] Iteration  13: 0.215 s/op
+[info] Iteration  14: 0.212 s/op
+[info] Iteration  15: 0.215 s/op
+[info] Iteration  16: 0.219 s/op
+[info] Iteration  17: 0.205 s/op
+[info] Iteration  18: 0.205 s/op
+[info] Iteration  19: 0.218 s/op
+[info] Iteration  20: 0.235 s/op
+[info] Iteration  21: 0.218 s/op
+[info] Iteration  22: 0.216 s/op
+[info] Iteration  23: 0.207 s/op
+[info] Iteration  24: 0.202 s/op
+[info] Iteration  25: 0.206 s/op
+[info] Iteration  26: 0.199 s/op
+[info] Iteration  27: 0.200 s/op
+[info] Iteration  28: 0.201 s/op
+[info] Iteration  29: 0.202 s/op
+[info] Iteration  30: 0.215 s/op
+[info] Iteration  31: 0.206 s/op
+[info] Iteration  32: 0.220 s/op
+[info] Iteration  33: 0.197 s/op
+[info] Iteration  34: 0.216 s/op
+[info] Iteration  35: 0.216 s/op
+[info] Iteration  36: 0.208 s/op
+[info] Iteration  37: 0.202 s/op
+[info] Iteration  38: 0.212 s/op
+[info] Iteration  39: 0.212 s/op
+[info] Iteration  40: 0.197 s/op
+[info] Iteration  41: 0.197 s/op
+[info] Iteration  42: 0.214 s/op
+[info] Iteration  43: 0.197 s/op
+[info] Iteration  44: 0.198 s/op
+[info] Iteration  45: 0.214 s/op
+[info] Iteration  46: 0.201 s/op
+[info] Iteration  47: 0.199 s/op
+[info] Iteration  48: 0.197 s/op
+[info] Iteration  49: 0.211 s/op
+[info] Iteration  50: 0.197 s/op
+[info] 
+[info] 
+[info] Result "delete1M_Asc":
+[info]   0.217 ±(99.9%) 0.013 s/op [Average]
+[info]   (min, avg, max) = (0.197, 0.217, 0.354), stdev = 0.027
+[info]   CI (99.9%): [0.204, 0.230] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.delete1M_Dsc
+[info] 
+[info] # Run progress: 6.67% complete, ETA 00:21:19
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.355 s/op
+[info] # Warmup Iteration   2: 0.289 s/op
+[info] # Warmup Iteration   3: 0.281 s/op
+[info] # Warmup Iteration   4: 0.252 s/op
+[info] # Warmup Iteration   5: 0.270 s/op
+[info] # Warmup Iteration   6: 0.272 s/op
+[info] # Warmup Iteration   7: 0.296 s/op
+[info] # Warmup Iteration   8: 0.258 s/op
+[info] # Warmup Iteration   9: 0.257 s/op
+[info] # Warmup Iteration  10: 0.243 s/op
+[info] # Warmup Iteration  11: 0.239 s/op
+[info] # Warmup Iteration  12: 0.250 s/op
+[info] # Warmup Iteration  13: 0.247 s/op
+[info] # Warmup Iteration  14: 0.239 s/op
+[info] # Warmup Iteration  15: 0.238 s/op
+[info] # Warmup Iteration  16: 0.256 s/op
+[info] # Warmup Iteration  17: 0.234 s/op
+[info] # Warmup Iteration  18: 0.242 s/op
+[info] # Warmup Iteration  19: 0.258 s/op
+[info] # Warmup Iteration  20: 0.258 s/op
+[info] # Warmup Iteration  21: 0.247 s/op
+[info] # Warmup Iteration  22: 0.256 s/op
+[info] # Warmup Iteration  23: 0.233 s/op
+[info] # Warmup Iteration  24: 0.236 s/op
+[info] # Warmup Iteration  25: 0.253 s/op
+[info] # Warmup Iteration  26: 0.250 s/op
+[info] # Warmup Iteration  27: 0.263 s/op
+[info] # Warmup Iteration  28: 0.244 s/op
+[info] # Warmup Iteration  29: 0.268 s/op
+[info] # Warmup Iteration  30: 0.241 s/op
+[info] Iteration   1: 0.235 s/op
+[info] Iteration   2: 0.234 s/op
+[info] Iteration   3: 0.260 s/op
+[info] Iteration   4: 0.267 s/op
+[info] Iteration   5: 0.254 s/op
+[info] Iteration   6: 0.263 s/op
+[info] Iteration   7: 0.244 s/op
+[info] Iteration   8: 0.236 s/op
+[info] Iteration   9: 0.248 s/op
+[info] Iteration  10: 0.262 s/op
+[info] Iteration  11: 0.242 s/op
+[info] Iteration  12: 0.236 s/op
+[info] Iteration  13: 0.253 s/op
+[info] Iteration  14: 0.236 s/op
+[info] Iteration  15: 0.260 s/op
+[info] Iteration  16: 0.243 s/op
+[info] Iteration  17: 0.284 s/op
+[info] Iteration  18: 0.255 s/op
+[info] Iteration  19: 0.262 s/op
+[info] Iteration  20: 0.262 s/op
+[info] Iteration  21: 0.246 s/op
+[info] Iteration  22: 0.254 s/op
+[info] Iteration  23: 0.271 s/op
+[info] Iteration  24: 0.247 s/op
+[info] Iteration  25: 0.258 s/op
+[info] Iteration  26: 0.272 s/op
+[info] Iteration  27: 0.235 s/op
+[info] Iteration  28: 0.255 s/op
+[info] Iteration  29: 0.239 s/op
+[info] Iteration  30: 0.238 s/op
+[info] Iteration  31: 0.255 s/op
+[info] Iteration  32: 0.256 s/op
+[info] Iteration  33: 0.232 s/op
+[info] Iteration  34: 0.235 s/op
+[info] Iteration  35: 0.285 s/op
+[info] Iteration  36: 0.256 s/op
+[info] Iteration  37: 0.239 s/op
+[info] Iteration  38: 0.236 s/op
+[info] Iteration  39: 0.259 s/op
+[info] Iteration  40: 0.243 s/op
+[info] Iteration  41: 0.248 s/op
+[info] Iteration  42: 0.245 s/op
+[info] Iteration  43: 0.251 s/op
+[info] Iteration  44: 0.235 s/op
+[info] Iteration  45: 0.254 s/op
+[info] Iteration  46: 0.252 s/op
+[info] Iteration  47: 0.234 s/op
+[info] Iteration  48: 0.252 s/op
+[info] Iteration  49: 0.235 s/op
+[info] Iteration  50: 0.235 s/op
+[info] 
+[info] 
+[info] Result "delete1M_Dsc":
+[info]   0.250 ±(99.9%) 0.006 s/op [Average]
+[info]   (min, avg, max) = (0.232, 0.250, 0.285), stdev = 0.013
+[info]   CI (99.9%): [0.243, 0.256] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.delete1M_Rand
+[info] 
+[info] # Run progress: 13.33% complete, ETA 00:19:57
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1.069 s/op
+[info] # Warmup Iteration   2: 0.978 s/op
+[info] # Warmup Iteration   3: 0.924 s/op
+[info] # Warmup Iteration   4: 0.943 s/op
+[info] # Warmup Iteration   5: 0.931 s/op
+[info] # Warmup Iteration   6: 1.219 s/op
+[info] # Warmup Iteration   7: 0.874 s/op
+[info] # Warmup Iteration   8: 0.853 s/op
+[info] # Warmup Iteration   9: 0.856 s/op
+[info] # Warmup Iteration  10: 0.854 s/op
+[info] # Warmup Iteration  11: 0.856 s/op
+[info] # Warmup Iteration  12: 0.848 s/op
+[info] # Warmup Iteration  13: 0.857 s/op
+[info] # Warmup Iteration  14: 0.855 s/op
+[info] # Warmup Iteration  15: 0.850 s/op
+[info] # Warmup Iteration  16: 0.893 s/op
+[info] # Warmup Iteration  17: 0.979 s/op
+[info] # Warmup Iteration  18: 0.863 s/op
+[info] # Warmup Iteration  19: 0.869 s/op
+[info] # Warmup Iteration  20: 0.977 s/op
+[info] # Warmup Iteration  21: 0.855 s/op
+[info] # Warmup Iteration  22: 0.858 s/op
+[info] # Warmup Iteration  23: 0.857 s/op
+[info] # Warmup Iteration  24: 0.853 s/op
+[info] # Warmup Iteration  25: 0.853 s/op
+[info] # Warmup Iteration  26: 0.859 s/op
+[info] # Warmup Iteration  27: 0.855 s/op
+[info] # Warmup Iteration  28: 0.845 s/op
+[info] # Warmup Iteration  29: 0.853 s/op
+[info] # Warmup Iteration  30: 0.851 s/op
+[info] Iteration   1: 0.848 s/op
+[info] Iteration   2: 0.848 s/op
+[info] Iteration   3: 0.855 s/op
+[info] Iteration   4: 0.852 s/op
+[info] Iteration   5: 0.853 s/op
+[info] Iteration   6: 0.875 s/op
+[info] Iteration   7: 0.863 s/op
+[info] Iteration   8: 0.853 s/op
+[info] Iteration   9: 0.856 s/op
+[info] Iteration  10: 0.873 s/op
+[info] Iteration  11: 0.850 s/op
+[info] Iteration  12: 0.843 s/op
+[info] Iteration  13: 0.846 s/op
+[info] Iteration  14: 0.852 s/op
+[info] Iteration  15: 0.865 s/op
+[info] Iteration  16: 0.860 s/op
+[info] Iteration  17: 0.851 s/op
+[info] Iteration  18: 0.853 s/op
+[info] Iteration  19: 0.848 s/op
+[info] Iteration  20: 0.844 s/op
+[info] Iteration  21: 0.845 s/op
+[info] Iteration  22: 0.850 s/op
+[info] Iteration  23: 0.853 s/op
+[info] Iteration  24: 0.846 s/op
+[info] Iteration  25: 0.853 s/op
+[info] Iteration  26: 0.857 s/op
+[info] Iteration  27: 0.851 s/op
+[info] Iteration  28: 0.852 s/op
+[info] Iteration  29: 0.852 s/op
+[info] Iteration  30: 0.851 s/op
+[info] Iteration  31: 0.844 s/op
+[info] Iteration  32: 0.848 s/op
+[info] Iteration  33: 0.854 s/op
+[info] Iteration  34: 0.862 s/op
+[info] Iteration  35: 0.848 s/op
+[info] Iteration  36: 0.852 s/op
+[info] Iteration  37: 0.846 s/op
+[info] Iteration  38: 0.843 s/op
+[info] Iteration  39: 0.855 s/op
+[info] Iteration  40: 1.048 s/op
+[info] Iteration  41: 0.900 s/op
+[info] Iteration  42: 0.864 s/op
+[info] Iteration  43: 0.848 s/op
+[info] Iteration  44: 0.898 s/op
+[info] Iteration  45: 0.925 s/op
+[info] Iteration  46: 0.922 s/op
+[info] Iteration  47: 0.916 s/op
+[info] Iteration  48: 0.929 s/op
+[info] Iteration  49: 0.966 s/op
+[info] Iteration  50: 0.923 s/op
+[info] 
+[info] 
+[info] Result "delete1M_Rand":
+[info]   0.868 ±(99.9%) 0.019 s/op [Average]
+[info]   (min, avg, max) = (0.843, 0.868, 1.048), stdev = 0.038
+[info]   CI (99.9%): [0.849, 0.887] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.difference1M_E_O
+[info] 
+[info] # Run progress: 20.00% complete, ETA 00:21:47
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.069 s/op
+[info] # Warmup Iteration   2: 0.044 s/op
+[info] # Warmup Iteration   3: 0.045 s/op
+[info] # Warmup Iteration   4: 0.040 s/op
+[info] # Warmup Iteration   5: 0.165 s/op
+[info] # Warmup Iteration   6: 0.040 s/op
+[info] # Warmup Iteration   7: 0.041 s/op
+[info] # Warmup Iteration   8: 0.039 s/op
+[info] # Warmup Iteration   9: 0.040 s/op
+[info] # Warmup Iteration  10: 0.039 s/op
+[info] # Warmup Iteration  11: 0.038 s/op
+[info] # Warmup Iteration  12: 0.038 s/op
+[info] # Warmup Iteration  13: 0.040 s/op
+[info] # Warmup Iteration  14: 0.040 s/op
+[info] # Warmup Iteration  15: 0.044 s/op
+[info] # Warmup Iteration  16: 0.038 s/op
+[info] # Warmup Iteration  17: 0.040 s/op
+[info] # Warmup Iteration  18: 0.040 s/op
+[info] # Warmup Iteration  19: 0.036 s/op
+[info] # Warmup Iteration  20: 0.040 s/op
+[info] # Warmup Iteration  21: 0.038 s/op
+[info] # Warmup Iteration  22: 0.041 s/op
+[info] # Warmup Iteration  23: 0.039 s/op
+[info] # Warmup Iteration  24: 0.041 s/op
+[info] # Warmup Iteration  25: 0.044 s/op
+[info] # Warmup Iteration  26: 0.040 s/op
+[info] # Warmup Iteration  27: 0.044 s/op
+[info] # Warmup Iteration  28: 0.043 s/op
+[info] # Warmup Iteration  29: 0.039 s/op
+[info] # Warmup Iteration  30: 0.040 s/op
+[info] Iteration   1: 0.038 s/op
+[info] Iteration   2: 0.040 s/op
+[info] Iteration   3: 0.037 s/op
+[info] Iteration   4: 0.038 s/op
+[info] Iteration   5: 0.038 s/op
+[info] Iteration   6: 0.044 s/op
+[info] Iteration   7: 0.041 s/op
+[info] Iteration   8: 0.040 s/op
+[info] Iteration   9: 0.040 s/op
+[info] Iteration  10: 0.047 s/op
+[info] Iteration  11: 0.050 s/op
+[info] Iteration  12: 0.040 s/op
+[info] Iteration  13: 0.036 s/op
+[info] Iteration  14: 0.037 s/op
+[info] Iteration  15: 0.038 s/op
+[info] Iteration  16: 0.040 s/op
+[info] Iteration  17: 0.044 s/op
+[info] Iteration  18: 0.039 s/op
+[info] Iteration  19: 0.039 s/op
+[info] Iteration  20: 0.038 s/op
+[info] Iteration  21: 0.040 s/op
+[info] Iteration  22: 0.038 s/op
+[info] Iteration  23: 0.039 s/op
+[info] Iteration  24: 0.036 s/op
+[info] Iteration  25: 0.039 s/op
+[info] Iteration  26: 0.039 s/op
+[info] Iteration  27: 0.037 s/op
+[info] Iteration  28: 0.037 s/op
+[info] Iteration  29: 0.042 s/op
+[info] Iteration  30: 0.044 s/op
+[info] Iteration  31: 0.042 s/op
+[info] Iteration  32: 0.040 s/op
+[info] Iteration  33: 0.038 s/op
+[info] Iteration  34: 0.041 s/op
+[info] Iteration  35: 0.041 s/op
+[info] Iteration  36: 0.037 s/op
+[info] Iteration  37: 0.037 s/op
+[info] Iteration  38: 0.040 s/op
+[info] Iteration  39: 0.039 s/op
+[info] Iteration  40: 0.039 s/op
+[info] Iteration  41: 0.040 s/op
+[info] Iteration  42: 0.040 s/op
+[info] Iteration  43: 0.036 s/op
+[info] Iteration  44: 0.037 s/op
+[info] Iteration  45: 0.037 s/op
+[info] Iteration  46: 0.044 s/op
+[info] Iteration  47: 0.044 s/op
+[info] Iteration  48: 0.038 s/op
+[info] Iteration  49: 0.037 s/op
+[info] Iteration  50: 0.040 s/op
+[info] 
+[info] 
+[info] Result "difference1M_E_O":
+[info]   0.040 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.036, 0.040, 0.050), stdev = 0.003
+[info]   CI (99.9%): [0.038, 0.041] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.difference1M_Rand
+[info] 
+[info] # Run progress: 26.67% complete, ETA 00:18:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.127 s/op
+[info] # Warmup Iteration   2: 0.079 s/op
+[info] # Warmup Iteration   3: 0.078 s/op
+[info] # Warmup Iteration   4: 0.080 s/op
+[info] # Warmup Iteration   5: 0.073 s/op
+[info] # Warmup Iteration   6: 0.067 s/op
+[info] # Warmup Iteration   7: 0.075 s/op
+[info] # Warmup Iteration   8: 0.131 s/op
+[info] # Warmup Iteration   9: 0.064 s/op
+[info] # Warmup Iteration  10: 0.068 s/op
+[info] # Warmup Iteration  11: 0.067 s/op
+[info] # Warmup Iteration  12: 0.069 s/op
+[info] # Warmup Iteration  13: 0.067 s/op
+[info] # Warmup Iteration  14: 0.064 s/op
+[info] # Warmup Iteration  15: 0.064 s/op
+[info] # Warmup Iteration  16: 0.071 s/op
+[info] # Warmup Iteration  17: 0.068 s/op
+[info] # Warmup Iteration  18: 0.066 s/op
+[info] # Warmup Iteration  19: 0.060 s/op
+[info] # Warmup Iteration  20: 0.066 s/op
+[info] # Warmup Iteration  21: 0.068 s/op
+[info] # Warmup Iteration  22: 0.065 s/op
+[info] # Warmup Iteration  23: 0.067 s/op
+[info] # Warmup Iteration  24: 0.063 s/op
+[info] # Warmup Iteration  25: 0.062 s/op
+[info] # Warmup Iteration  26: 0.061 s/op
+[info] # Warmup Iteration  27: 0.066 s/op
+[info] # Warmup Iteration  28: 0.061 s/op
+[info] # Warmup Iteration  29: 0.060 s/op
+[info] # Warmup Iteration  30: 0.061 s/op
+[info] Iteration   1: 0.068 s/op
+[info] Iteration   2: 0.062 s/op
+[info] Iteration   3: 0.061 s/op
+[info] Iteration   4: 0.062 s/op
+[info] Iteration   5: 0.067 s/op
+[info] Iteration   6: 0.062 s/op
+[info] Iteration   7: 0.061 s/op
+[info] Iteration   8: 0.066 s/op
+[info] Iteration   9: 0.066 s/op
+[info] Iteration  10: 0.061 s/op
+[info] Iteration  11: 0.060 s/op
+[info] Iteration  12: 0.060 s/op
+[info] Iteration  13: 0.061 s/op
+[info] Iteration  14: 0.060 s/op
+[info] Iteration  15: 0.061 s/op
+[info] Iteration  16: 0.060 s/op
+[info] Iteration  17: 0.061 s/op
+[info] Iteration  18: 0.061 s/op
+[info] Iteration  19: 0.060 s/op
+[info] Iteration  20: 0.061 s/op
+[info] Iteration  21: 0.061 s/op
+[info] Iteration  22: 0.060 s/op
+[info] Iteration  23: 0.061 s/op
+[info] Iteration  24: 0.061 s/op
+[info] Iteration  25: 0.062 s/op
+[info] Iteration  26: 0.067 s/op
+[info] Iteration  27: 0.065 s/op
+[info] Iteration  28: 0.065 s/op
+[info] Iteration  29: 0.063 s/op
+[info] Iteration  30: 0.066 s/op
+[info] Iteration  31: 0.061 s/op
+[info] Iteration  32: 0.067 s/op
+[info] Iteration  33: 0.060 s/op
+[info] Iteration  34: 0.065 s/op
+[info] Iteration  35: 0.060 s/op
+[info] Iteration  36: 0.065 s/op
+[info] Iteration  37: 0.066 s/op
+[info] Iteration  38: 0.066 s/op
+[info] Iteration  39: 0.066 s/op
+[info] Iteration  40: 0.063 s/op
+[info] Iteration  41: 0.065 s/op
+[info] Iteration  42: 0.067 s/op
+[info] Iteration  43: 0.062 s/op
+[info] Iteration  44: 0.067 s/op
+[info] Iteration  45: 0.062 s/op
+[info] Iteration  46: 0.064 s/op
+[info] Iteration  47: 0.065 s/op
+[info] Iteration  48: 0.067 s/op
+[info] Iteration  49: 0.063 s/op
+[info] Iteration  50: 0.065 s/op
+[info] 
+[info] 
+[info] Result "difference1M_Rand":
+[info]   0.063 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.060, 0.063, 0.068), stdev = 0.003
+[info]   CI (99.9%): [0.062, 0.064] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.difference1M_Rand2
+[info] 
+[info] # Run progress: 33.33% complete, ETA 00:16:37
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.097 s/op
+[info] # Warmup Iteration   2: 0.058 s/op
+[info] # Warmup Iteration   3: 0.064 s/op
+[info] # Warmup Iteration   4: 0.061 s/op
+[info] # Warmup Iteration   5: 0.065 s/op
+[info] # Warmup Iteration   6: 0.094 s/op
+[info] # Warmup Iteration   7: 0.059 s/op
+[info] # Warmup Iteration   8: 0.058 s/op
+[info] # Warmup Iteration   9: 0.051 s/op
+[info] # Warmup Iteration  10: 0.050 s/op
+[info] # Warmup Iteration  11: 0.055 s/op
+[info] # Warmup Iteration  12: 0.057 s/op
+[info] # Warmup Iteration  13: 0.055 s/op
+[info] # Warmup Iteration  14: 0.056 s/op
+[info] # Warmup Iteration  15: 0.056 s/op
+[info] # Warmup Iteration  16: 0.055 s/op
+[info] # Warmup Iteration  17: 0.058 s/op
+[info] # Warmup Iteration  18: 0.056 s/op
+[info] # Warmup Iteration  19: 0.053 s/op
+[info] # Warmup Iteration  20: 0.053 s/op
+[info] # Warmup Iteration  21: 0.055 s/op
+[info] # Warmup Iteration  22: 0.052 s/op
+[info] # Warmup Iteration  23: 0.052 s/op
+[info] # Warmup Iteration  24: 0.052 s/op
+[info] # Warmup Iteration  25: 0.054 s/op
+[info] # Warmup Iteration  26: 0.054 s/op
+[info] # Warmup Iteration  27: 0.052 s/op
+[info] # Warmup Iteration  28: 0.054 s/op
+[info] # Warmup Iteration  29: 0.056 s/op
+[info] # Warmup Iteration  30: 0.052 s/op
+[info] Iteration   1: 0.054 s/op
+[info] Iteration   2: 0.056 s/op
+[info] Iteration   3: 0.053 s/op
+[info] Iteration   4: 0.050 s/op
+[info] Iteration   5: 0.050 s/op
+[info] Iteration   6: 0.050 s/op
+[info] Iteration   7: 0.049 s/op
+[info] Iteration   8: 0.052 s/op
+[info] Iteration   9: 0.050 s/op
+[info] Iteration  10: 0.050 s/op
+[info] Iteration  11: 0.059 s/op
+[info] Iteration  12: 0.049 s/op
+[info] Iteration  13: 0.049 s/op
+[info] Iteration  14: 0.054 s/op
+[info] Iteration  15: 0.048 s/op
+[info] Iteration  16: 0.049 s/op
+[info] Iteration  17: 0.052 s/op
+[info] Iteration  18: 0.055 s/op
+[info] Iteration  19: 0.054 s/op
+[info] Iteration  20: 0.050 s/op
+[info] Iteration  21: 0.057 s/op
+[info] Iteration  22: 0.050 s/op
+[info] Iteration  23: 0.054 s/op
+[info] Iteration  24: 0.050 s/op
+[info] Iteration  25: 0.049 s/op
+[info] Iteration  26: 0.050 s/op
+[info] Iteration  27: 0.053 s/op
+[info] Iteration  28: 0.058 s/op
+[info] Iteration  29: 0.055 s/op
+[info] Iteration  30: 0.054 s/op
+[info] Iteration  31: 0.056 s/op
+[info] Iteration  32: 0.055 s/op
+[info] Iteration  33: 0.055 s/op
+[info] Iteration  34: 0.056 s/op
+[info] Iteration  35: 0.057 s/op
+[info] Iteration  36: 0.056 s/op
+[info] Iteration  37: 0.056 s/op
+[info] Iteration  38: 0.056 s/op
+[info] Iteration  39: 0.055 s/op
+[info] Iteration  40: 0.055 s/op
+[info] Iteration  41: 0.053 s/op
+[info] Iteration  42: 0.057 s/op
+[info] Iteration  43: 0.055 s/op
+[info] Iteration  44: 0.056 s/op
+[info] Iteration  45: 0.052 s/op
+[info] Iteration  46: 0.052 s/op
+[info] Iteration  47: 0.051 s/op
+[info] Iteration  48: 0.050 s/op
+[info] Iteration  49: 0.053 s/op
+[info] Iteration  50: 0.053 s/op
+[info] 
+[info] 
+[info] Result "difference1M_Rand2":
+[info]   0.053 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.048, 0.053, 0.059), stdev = 0.003
+[info]   CI (99.9%): [0.052, 0.054] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.insert1M_Asc
+[info] 
+[info] # Run progress: 40.00% complete, ETA 00:14:37
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.603 s/op
+[info] # Warmup Iteration   2: 0.694 s/op
+[info] # Warmup Iteration   3: 0.455 s/op
+[info] # Warmup Iteration   4: 0.424 s/op
+[info] # Warmup Iteration   5: 0.413 s/op
+[info] # Warmup Iteration   6: 0.463 s/op
+[info] # Warmup Iteration   7: 0.408 s/op
+[info] # Warmup Iteration   8: 0.394 s/op
+[info] # Warmup Iteration   9: 0.392 s/op
+[info] # Warmup Iteration  10: 0.413 s/op
+[info] # Warmup Iteration  11: 0.397 s/op
+[info] # Warmup Iteration  12: 0.399 s/op
+[info] # Warmup Iteration  13: 0.372 s/op
+[info] # Warmup Iteration  14: 0.418 s/op
+[info] # Warmup Iteration  15: 0.400 s/op
+[info] # Warmup Iteration  16: 0.387 s/op
+[info] # Warmup Iteration  17: 0.384 s/op
+[info] # Warmup Iteration  18: 0.366 s/op
+[info] # Warmup Iteration  19: 0.390 s/op
+[info] # Warmup Iteration  20: 0.429 s/op
+[info] # Warmup Iteration  21: 0.418 s/op
+[info] # Warmup Iteration  22: 0.399 s/op
+[info] # Warmup Iteration  23: 0.374 s/op
+[info] # Warmup Iteration  24: 0.391 s/op
+[info] # Warmup Iteration  25: 0.422 s/op
+[info] # Warmup Iteration  26: 0.386 s/op
+[info] # Warmup Iteration  27: 0.376 s/op
+[info] # Warmup Iteration  28: 0.360 s/op
+[info] # Warmup Iteration  29: 0.436 s/op
+[info] # Warmup Iteration  30: 0.395 s/op
+[info] Iteration   1: 0.396 s/op
+[info] Iteration   2: 0.377 s/op
+[info] Iteration   3: 0.386 s/op
+[info] Iteration   4: 0.395 s/op
+[info] Iteration   5: 0.397 s/op
+[info] Iteration   6: 0.388 s/op
+[info] Iteration   7: 0.378 s/op
+[info] Iteration   8: 0.390 s/op
+[info] Iteration   9: 0.390 s/op
+[info] Iteration  10: 0.418 s/op
+[info] Iteration  11: 0.409 s/op
+[info] Iteration  12: 0.372 s/op
+[info] Iteration  13: 0.390 s/op
+[info] Iteration  14: 0.438 s/op
+[info] Iteration  15: 0.392 s/op
+[info] Iteration  16: 0.406 s/op
+[info] Iteration  17: 0.401 s/op
+[info] Iteration  18: 0.381 s/op
+[info] Iteration  19: 0.404 s/op
+[info] Iteration  20: 0.410 s/op
+[info] Iteration  21: 0.406 s/op
+[info] Iteration  22: 0.383 s/op
+[info] Iteration  23: 0.360 s/op
+[info] Iteration  24: 0.418 s/op
+[info] Iteration  25: 0.426 s/op
+[info] Iteration  26: 0.396 s/op
+[info] Iteration  27: 0.391 s/op
+[info] Iteration  28: 0.365 s/op
+[info] Iteration  29: 0.407 s/op
+[info] Iteration  30: 0.402 s/op
+[info] Iteration  31: 0.411 s/op
+[info] Iteration  32: 0.391 s/op
+[info] Iteration  33: 0.410 s/op
+[info] Iteration  34: 0.396 s/op
+[info] Iteration  35: 0.402 s/op
+[info] Iteration  36: 0.391 s/op
+[info] Iteration  37: 0.380 s/op
+[info] Iteration  38: 0.385 s/op
+[info] Iteration  39: 0.399 s/op
+[info] Iteration  40: 0.417 s/op
+[info] Iteration  41: 0.404 s/op
+[info] Iteration  42: 0.426 s/op
+[info] Iteration  43: 0.376 s/op
+[info] Iteration  44: 0.401 s/op
+[info] Iteration  45: 0.433 s/op
+[info] Iteration  46: 0.390 s/op
+[info] Iteration  47: 0.399 s/op
+[info] Iteration  48: 0.365 s/op
+[info] Iteration  49: 0.408 s/op
+[info] Iteration  50: 0.431 s/op
+[info] 
+[info] 
+[info] Result "insert1M_Asc":
+[info]   0.398 ±(99.9%) 0.009 s/op [Average]
+[info]   (min, avg, max) = (0.360, 0.398, 0.438), stdev = 0.017
+[info]   CI (99.9%): [0.389, 0.406] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.insert1M_Dsc
+[info] 
+[info] # Run progress: 46.67% complete, ETA 00:13:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.596 s/op
+[info] # Warmup Iteration   2: 0.433 s/op
+[info] # Warmup Iteration   3: 0.375 s/op
+[info] # Warmup Iteration   4: 0.396 s/op
+[info] # Warmup Iteration   5: 0.379 s/op
+[info] # Warmup Iteration   6: 0.362 s/op
+[info] # Warmup Iteration   7: 0.392 s/op
+[info] # Warmup Iteration   8: 0.381 s/op
+[info] # Warmup Iteration   9: 0.373 s/op
+[info] # Warmup Iteration  10: 0.382 s/op
+[info] # Warmup Iteration  11: 0.425 s/op
+[info] # Warmup Iteration  12: 0.405 s/op
+[info] # Warmup Iteration  13: 0.374 s/op
+[info] # Warmup Iteration  14: 0.359 s/op
+[info] # Warmup Iteration  15: 0.355 s/op
+[info] # Warmup Iteration  16: 0.388 s/op
+[info] # Warmup Iteration  17: 0.379 s/op
+[info] # Warmup Iteration  18: 0.369 s/op
+[info] # Warmup Iteration  19: 0.363 s/op
+[info] # Warmup Iteration  20: 0.363 s/op
+[info] # Warmup Iteration  21: 0.421 s/op
+[info] # Warmup Iteration  22: 0.413 s/op
+[info] # Warmup Iteration  23: 0.397 s/op
+[info] # Warmup Iteration  24: 0.386 s/op
+[info] # Warmup Iteration  25: 0.349 s/op
+[info] # Warmup Iteration  26: 0.417 s/op
+[info] # Warmup Iteration  27: 0.383 s/op
+[info] # Warmup Iteration  28: 0.394 s/op
+[info] # Warmup Iteration  29: 0.378 s/op
+[info] # Warmup Iteration  30: 0.343 s/op
+[info] Iteration   1: 0.384 s/op
+[info] Iteration   2: 0.390 s/op
+[info] Iteration   3: 0.381 s/op
+[info] Iteration   4: 0.384 s/op
+[info] Iteration   5: 0.343 s/op
+[info] Iteration   6: 0.399 s/op
+[info] Iteration   7: 0.381 s/op
+[info] Iteration   8: 0.367 s/op
+[info] Iteration   9: 0.354 s/op
+[info] Iteration  10: 0.367 s/op
+[info] Iteration  11: 0.416 s/op
+[info] Iteration  12: 0.375 s/op
+[info] Iteration  13: 0.391 s/op
+[info] Iteration  14: 0.361 s/op
+[info] Iteration  15: 0.351 s/op
+[info] Iteration  16: 0.391 s/op
+[info] Iteration  17: 0.380 s/op
+[info] Iteration  18: 0.368 s/op
+[info] Iteration  19: 0.362 s/op
+[info] Iteration  20: 0.398 s/op
+[info] Iteration  21: 0.385 s/op
+[info] Iteration  22: 0.373 s/op
+[info] Iteration  23: 0.395 s/op
+[info] Iteration  24: 0.351 s/op
+[info] Iteration  25: 0.349 s/op
+[info] Iteration  26: 0.408 s/op
+[info] Iteration  27: 0.373 s/op
+[info] Iteration  28: 0.382 s/op
+[info] Iteration  29: 0.352 s/op
+[info] Iteration  30: 0.381 s/op
+[info] Iteration  31: 0.413 s/op
+[info] Iteration  32: 0.377 s/op
+[info] Iteration  33: 0.394 s/op
+[info] Iteration  34: 0.374 s/op
+[info] Iteration  35: 0.359 s/op
+[info] Iteration  36: 0.381 s/op
+[info] Iteration  37: 0.406 s/op
+[info] Iteration  38: 0.396 s/op
+[info] Iteration  39: 0.387 s/op
+[info] Iteration  40: 0.388 s/op
+[info] Iteration  41: 0.398 s/op
+[info] Iteration  42: 0.390 s/op
+[info] Iteration  43: 0.364 s/op
+[info] Iteration  44: 0.376 s/op
+[info] Iteration  45: 0.346 s/op
+[info] Iteration  46: 0.414 s/op
+[info] Iteration  47: 0.383 s/op
+[info] Iteration  48: 0.381 s/op
+[info] Iteration  49: 0.400 s/op
+[info] Iteration  50: 0.366 s/op
+[info] 
+[info] 
+[info] Result "insert1M_Dsc":
+[info]   0.380 ±(99.9%) 0.009 s/op [Average]
+[info]   (min, avg, max) = (0.343, 0.380, 0.416), stdev = 0.018
+[info]   CI (99.9%): [0.371, 0.389] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.insert1M_Rand
+[info] 
+[info] # Run progress: 53.33% complete, ETA 00:11:20
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1.046 s/op
+[info] # Warmup Iteration   2: 1.627 s/op
+[info] # Warmup Iteration   3: 1.051 s/op
+[info] # Warmup Iteration   4: 1.096 s/op
+[info] # Warmup Iteration   5: 1.007 s/op
+[info] # Warmup Iteration   6: 1.024 s/op
+[info] # Warmup Iteration   7: 1.041 s/op
+[info] # Warmup Iteration   8: 1.032 s/op
+[info] # Warmup Iteration   9: 0.982 s/op
+[info] # Warmup Iteration  10: 1.008 s/op
+[info] # Warmup Iteration  11: 1.007 s/op
+[info] # Warmup Iteration  12: 1.041 s/op
+[info] # Warmup Iteration  13: 1.032 s/op
+[info] # Warmup Iteration  14: 0.967 s/op
+[info] # Warmup Iteration  15: 1.160 s/op
+[info] # Warmup Iteration  16: 1.011 s/op
+[info] # Warmup Iteration  17: 0.903 s/op
+[info] # Warmup Iteration  18: 0.907 s/op
+[info] # Warmup Iteration  19: 0.912 s/op
+[info] # Warmup Iteration  20: 0.906 s/op
+[info] # Warmup Iteration  21: 0.875 s/op
+[info] # Warmup Iteration  22: 0.872 s/op
+[info] # Warmup Iteration  23: 0.876 s/op
+[info] # Warmup Iteration  24: 0.879 s/op
+[info] # Warmup Iteration  25: 0.905 s/op
+[info] # Warmup Iteration  26: 0.921 s/op
+[info] # Warmup Iteration  27: 0.891 s/op
+[info] # Warmup Iteration  28: 0.887 s/op
+[info] # Warmup Iteration  29: 0.918 s/op
+[info] # Warmup Iteration  30: 0.866 s/op
+[info] Iteration   1: 0.894 s/op
+[info] Iteration   2: 0.867 s/op
+[info] Iteration   3: 0.874 s/op
+[info] Iteration   4: 0.886 s/op
+[info] Iteration   5: 0.899 s/op
+[info] Iteration   6: 0.995 s/op
+[info] Iteration   7: 0.881 s/op
+[info] Iteration   8: 0.870 s/op
+[info] Iteration   9: 1.005 s/op
+[info] Iteration  10: 0.932 s/op
+[info] Iteration  11: 1.162 s/op
+[info] Iteration  12: 1.010 s/op
+[info] Iteration  13: 1.191 s/op
+[info] Iteration  14: 0.932 s/op
+[info] Iteration  15: 0.967 s/op
+[info] Iteration  16: 1.095 s/op
+[info] Iteration  17: 0.926 s/op
+[info] Iteration  18: 0.919 s/op
+[info] Iteration  19: 0.948 s/op
+[info] Iteration  20: 0.906 s/op
+[info] Iteration  21: 0.947 s/op
+[info] Iteration  22: 0.923 s/op
+[info] Iteration  23: 0.919 s/op
+[info] Iteration  24: 0.906 s/op
+[info] Iteration  25: 0.907 s/op
+[info] Iteration  26: 0.974 s/op
+[info] Iteration  27: 0.904 s/op
+[info] Iteration  28: 0.922 s/op
+[info] Iteration  29: 0.894 s/op
+[info] Iteration  30: 0.889 s/op
+[info] Iteration  31: 0.902 s/op
+[info] Iteration  32: 0.920 s/op
+[info] Iteration  33: 1.011 s/op
+[info] Iteration  34: 1.009 s/op
+[info] Iteration  35: 0.963 s/op
+[info] Iteration  36: 0.896 s/op
+[info] Iteration  37: 0.867 s/op
+[info] Iteration  38: 0.878 s/op
+[info] Iteration  39: 0.900 s/op
+[info] Iteration  40: 0.935 s/op
+[info] Iteration  41: 0.936 s/op
+[info] Iteration  42: 0.873 s/op
+[info] Iteration  43: 0.919 s/op
+[info] Iteration  44: 0.898 s/op
+[info] Iteration  45: 0.937 s/op
+[info] Iteration  46: 0.877 s/op
+[info] Iteration  47: 0.904 s/op
+[info] Iteration  48: 0.991 s/op
+[info] Iteration  49: 0.928 s/op
+[info] Iteration  50: 0.896 s/op
+[info] 
+[info] 
+[info] Result "insert1M_Rand":
+[info]   0.936 ±(99.9%) 0.034 s/op [Average]
+[info]   (min, avg, max) = (0.867, 0.936, 1.191), stdev = 0.068
+[info]   CI (99.9%): [0.902, 0.969] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.intersection1M_E_O
+[info] 
+[info] # Run progress: 60.00% complete, ETA 00:10:08
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.033 s/op
+[info] # Warmup Iteration   2: 0.025 s/op
+[info] # Warmup Iteration   3: 0.023 s/op
+[info] # Warmup Iteration   4: 0.020 s/op
+[info] # Warmup Iteration   5: 0.021 s/op
+[info] # Warmup Iteration   6: 0.022 s/op
+[info] # Warmup Iteration   7: 0.020 s/op
+[info] # Warmup Iteration   8: 0.159 s/op
+[info] # Warmup Iteration   9: 0.021 s/op
+[info] # Warmup Iteration  10: 0.023 s/op
+[info] # Warmup Iteration  11: 0.020 s/op
+[info] # Warmup Iteration  12: 0.019 s/op
+[info] # Warmup Iteration  13: 0.019 s/op
+[info] # Warmup Iteration  14: 0.019 s/op
+[info] # Warmup Iteration  15: 0.021 s/op
+[info] # Warmup Iteration  16: 0.019 s/op
+[info] # Warmup Iteration  17: 0.020 s/op
+[info] # Warmup Iteration  18: 0.021 s/op
+[info] # Warmup Iteration  19: 0.019 s/op
+[info] # Warmup Iteration  20: 0.019 s/op
+[info] # Warmup Iteration  21: 0.019 s/op
+[info] # Warmup Iteration  22: 0.021 s/op
+[info] # Warmup Iteration  23: 0.019 s/op
+[info] # Warmup Iteration  24: 0.019 s/op
+[info] # Warmup Iteration  25: 0.021 s/op
+[info] # Warmup Iteration  26: 0.021 s/op
+[info] # Warmup Iteration  27: 0.020 s/op
+[info] # Warmup Iteration  28: 0.021 s/op
+[info] # Warmup Iteration  29: 0.021 s/op
+[info] # Warmup Iteration  30: 0.021 s/op
+[info] Iteration   1: 0.021 s/op
+[info] Iteration   2: 0.019 s/op
+[info] Iteration   3: 0.022 s/op
+[info] Iteration   4: 0.020 s/op
+[info] Iteration   5: 0.021 s/op
+[info] Iteration   6: 0.021 s/op
+[info] Iteration   7: 0.021 s/op
+[info] Iteration   8: 0.019 s/op
+[info] Iteration   9: 0.021 s/op
+[info] Iteration  10: 0.021 s/op
+[info] Iteration  11: 0.019 s/op
+[info] Iteration  12: 0.023 s/op
+[info] Iteration  13: 0.019 s/op
+[info] Iteration  14: 0.021 s/op
+[info] Iteration  15: 0.021 s/op
+[info] Iteration  16: 0.019 s/op
+[info] Iteration  17: 0.021 s/op
+[info] Iteration  18: 0.019 s/op
+[info] Iteration  19: 0.020 s/op
+[info] Iteration  20: 0.020 s/op
+[info] Iteration  21: 0.021 s/op
+[info] Iteration  22: 0.019 s/op
+[info] Iteration  23: 0.019 s/op
+[info] Iteration  24: 0.022 s/op
+[info] Iteration  25: 0.019 s/op
+[info] Iteration  26: 0.019 s/op
+[info] Iteration  27: 0.021 s/op
+[info] Iteration  28: 0.019 s/op
+[info] Iteration  29: 0.019 s/op
+[info] Iteration  30: 0.020 s/op
+[info] Iteration  31: 0.019 s/op
+[info] Iteration  32: 0.019 s/op
+[info] Iteration  33: 0.022 s/op
+[info] Iteration  34: 0.019 s/op
+[info] Iteration  35: 0.020 s/op
+[info] Iteration  36: 0.020 s/op
+[info] Iteration  37: 0.020 s/op
+[info] Iteration  38: 0.019 s/op
+[info] Iteration  39: 0.020 s/op
+[info] Iteration  40: 0.020 s/op
+[info] Iteration  41: 0.020 s/op
+[info] Iteration  42: 0.021 s/op
+[info] Iteration  43: 0.021 s/op
+[info] Iteration  44: 0.020 s/op
+[info] Iteration  45: 0.020 s/op
+[info] Iteration  46: 0.020 s/op
+[info] Iteration  47: 0.020 s/op
+[info] Iteration  48: 0.019 s/op
+[info] Iteration  49: 0.019 s/op
+[info] Iteration  50: 0.019 s/op
+[info] 
+[info] 
+[info] Result "intersection1M_E_O":
+[info]   0.020 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.019, 0.020, 0.023), stdev = 0.001
+[info]   CI (99.9%): [0.020, 0.021] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.intersection1M_Rand
+[info] 
+[info] # Run progress: 66.67% complete, ETA 00:08:18
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.052 s/op
+[info] # Warmup Iteration   2: 0.039 s/op
+[info] # Warmup Iteration   3: 0.042 s/op
+[info] # Warmup Iteration   4: 0.035 s/op
+[info] # Warmup Iteration   5: 0.039 s/op
+[info] # Warmup Iteration   6: 0.035 s/op
+[info] # Warmup Iteration   7: 0.065 s/op
+[info] # Warmup Iteration   8: 0.033 s/op
+[info] # Warmup Iteration   9: 0.033 s/op
+[info] # Warmup Iteration  10: 0.034 s/op
+[info] # Warmup Iteration  11: 0.033 s/op
+[info] # Warmup Iteration  12: 0.032 s/op
+[info] # Warmup Iteration  13: 0.032 s/op
+[info] # Warmup Iteration  14: 0.035 s/op
+[info] # Warmup Iteration  15: 0.035 s/op
+[info] # Warmup Iteration  16: 0.034 s/op
+[info] # Warmup Iteration  17: 0.032 s/op
+[info] # Warmup Iteration  18: 0.033 s/op
+[info] # Warmup Iteration  19: 0.034 s/op
+[info] # Warmup Iteration  20: 0.037 s/op
+[info] # Warmup Iteration  21: 0.033 s/op
+[info] # Warmup Iteration  22: 0.032 s/op
+[info] # Warmup Iteration  23: 0.032 s/op
+[info] # Warmup Iteration  24: 0.032 s/op
+[info] # Warmup Iteration  25: 0.032 s/op
+[info] # Warmup Iteration  26: 0.034 s/op
+[info] # Warmup Iteration  27: 0.032 s/op
+[info] # Warmup Iteration  28: 0.035 s/op
+[info] # Warmup Iteration  29: 0.032 s/op
+[info] # Warmup Iteration  30: 0.032 s/op
+[info] Iteration   1: 0.032 s/op
+[info] Iteration   2: 0.031 s/op
+[info] Iteration   3: 0.034 s/op
+[info] Iteration   4: 0.032 s/op
+[info] Iteration   5: 0.032 s/op
+[info] Iteration   6: 0.035 s/op
+[info] Iteration   7: 0.035 s/op
+[info] Iteration   8: 0.032 s/op
+[info] Iteration   9: 0.034 s/op
+[info] Iteration  10: 0.034 s/op
+[info] Iteration  11: 0.032 s/op
+[info] Iteration  12: 0.032 s/op
+[info] Iteration  13: 0.035 s/op
+[info] Iteration  14: 0.031 s/op
+[info] Iteration  15: 0.031 s/op
+[info] Iteration  16: 0.031 s/op
+[info] Iteration  17: 0.034 s/op
+[info] Iteration  18: 0.034 s/op
+[info] Iteration  19: 0.031 s/op
+[info] Iteration  20: 0.034 s/op
+[info] Iteration  21: 0.031 s/op
+[info] Iteration  22: 0.031 s/op
+[info] Iteration  23: 0.031 s/op
+[info] Iteration  24: 0.032 s/op
+[info] Iteration  25: 0.032 s/op
+[info] Iteration  26: 0.037 s/op
+[info] Iteration  27: 0.031 s/op
+[info] Iteration  28: 0.031 s/op
+[info] Iteration  29: 0.034 s/op
+[info] Iteration  30: 0.032 s/op
+[info] Iteration  31: 0.031 s/op
+[info] Iteration  32: 0.032 s/op
+[info] Iteration  33: 0.032 s/op
+[info] Iteration  34: 0.031 s/op
+[info] Iteration  35: 0.034 s/op
+[info] Iteration  36: 0.031 s/op
+[info] Iteration  37: 0.031 s/op
+[info] Iteration  38: 0.031 s/op
+[info] Iteration  39: 0.031 s/op
+[info] Iteration  40: 0.031 s/op
+[info] Iteration  41: 0.031 s/op
+[info] Iteration  42: 0.031 s/op
+[info] Iteration  43: 0.031 s/op
+[info] Iteration  44: 0.031 s/op
+[info] Iteration  45: 0.031 s/op
+[info] Iteration  46: 0.031 s/op
+[info] Iteration  47: 0.031 s/op
+[info] Iteration  48: 0.031 s/op
+[info] Iteration  49: 0.031 s/op
+[info] Iteration  50: 0.031 s/op
+[info] 
+[info] 
+[info] Result "intersection1M_Rand":
+[info]   0.032 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.031, 0.032, 0.037), stdev = 0.001
+[info]   CI (99.9%): [0.031, 0.033] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.intersection1M_Rand2
+[info] 
+[info] # Run progress: 73.33% complete, ETA 00:06:33
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.111 s/op
+[info] # Warmup Iteration   2: 0.097 s/op
+[info] # Warmup Iteration   3: 0.085 s/op
+[info] # Warmup Iteration   4: 0.084 s/op
+[info] # Warmup Iteration   5: 0.088 s/op
+[info] # Warmup Iteration   6: 0.082 s/op
+[info] # Warmup Iteration   7: 0.084 s/op
+[info] # Warmup Iteration   8: 0.206 s/op
+[info] # Warmup Iteration   9: 0.077 s/op
+[info] # Warmup Iteration  10: 0.074 s/op
+[info] # Warmup Iteration  11: 0.073 s/op
+[info] # Warmup Iteration  12: 0.080 s/op
+[info] # Warmup Iteration  13: 0.074 s/op
+[info] # Warmup Iteration  14: 0.074 s/op
+[info] # Warmup Iteration  15: 0.080 s/op
+[info] # Warmup Iteration  16: 0.073 s/op
+[info] # Warmup Iteration  17: 0.073 s/op
+[info] # Warmup Iteration  18: 0.073 s/op
+[info] # Warmup Iteration  19: 0.073 s/op
+[info] # Warmup Iteration  20: 0.073 s/op
+[info] # Warmup Iteration  21: 0.079 s/op
+[info] # Warmup Iteration  22: 0.072 s/op
+[info] # Warmup Iteration  23: 0.079 s/op
+[info] # Warmup Iteration  24: 0.078 s/op
+[info] # Warmup Iteration  25: 0.073 s/op
+[info] # Warmup Iteration  26: 0.073 s/op
+[info] # Warmup Iteration  27: 0.073 s/op
+[info] # Warmup Iteration  28: 0.078 s/op
+[info] # Warmup Iteration  29: 0.078 s/op
+[info] # Warmup Iteration  30: 0.072 s/op
+[info] Iteration   1: 0.078 s/op
+[info] Iteration   2: 0.073 s/op
+[info] Iteration   3: 0.072 s/op
+[info] Iteration   4: 0.072 s/op
+[info] Iteration   5: 0.073 s/op
+[info] Iteration   6: 0.073 s/op
+[info] Iteration   7: 0.074 s/op
+[info] Iteration   8: 0.073 s/op
+[info] Iteration   9: 0.073 s/op
+[info] Iteration  10: 0.078 s/op
+[info] Iteration  11: 0.081 s/op
+[info] Iteration  12: 0.072 s/op
+[info] Iteration  13: 0.073 s/op
+[info] Iteration  14: 0.074 s/op
+[info] Iteration  15: 0.073 s/op
+[info] Iteration  16: 0.075 s/op
+[info] Iteration  17: 0.080 s/op
+[info] Iteration  18: 0.079 s/op
+[info] Iteration  19: 0.073 s/op
+[info] Iteration  20: 0.073 s/op
+[info] Iteration  21: 0.073 s/op
+[info] Iteration  22: 0.073 s/op
+[info] Iteration  23: 0.072 s/op
+[info] Iteration  24: 0.072 s/op
+[info] Iteration  25: 0.072 s/op
+[info] Iteration  26: 0.072 s/op
+[info] Iteration  27: 0.072 s/op
+[info] Iteration  28: 0.072 s/op
+[info] Iteration  29: 0.074 s/op
+[info] Iteration  30: 0.073 s/op
+[info] Iteration  31: 0.074 s/op
+[info] Iteration  32: 0.080 s/op
+[info] Iteration  33: 0.073 s/op
+[info] Iteration  34: 0.071 s/op
+[info] Iteration  35: 0.078 s/op
+[info] Iteration  36: 0.072 s/op
+[info] Iteration  37: 0.072 s/op
+[info] Iteration  38: 0.073 s/op
+[info] Iteration  39: 0.072 s/op
+[info] Iteration  40: 0.072 s/op
+[info] Iteration  41: 0.072 s/op
+[info] Iteration  42: 0.072 s/op
+[info] Iteration  43: 0.078 s/op
+[info] Iteration  44: 0.078 s/op
+[info] Iteration  45: 0.072 s/op
+[info] Iteration  46: 0.074 s/op
+[info] Iteration  47: 0.072 s/op
+[info] Iteration  48: 0.071 s/op
+[info] Iteration  49: 0.078 s/op
+[info] Iteration  50: 0.072 s/op
+[info] 
+[info] 
+[info] Result "intersection1M_Rand2":
+[info]   0.074 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.071, 0.074, 0.081), stdev = 0.003
+[info]   CI (99.9%): [0.073, 0.075] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.union1M_E_O
+[info] 
+[info] # Run progress: 80.00% complete, ETA 00:04:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.195 s/op
+[info] # Warmup Iteration   2: 0.031 s/op
+[info] # Warmup Iteration   3: 0.027 s/op
+[info] # Warmup Iteration   4: 0.028 s/op
+[info] # Warmup Iteration   5: 0.027 s/op
+[info] # Warmup Iteration   6: 0.027 s/op
+[info] # Warmup Iteration   7: 0.027 s/op
+[info] # Warmup Iteration   8: 0.027 s/op
+[info] # Warmup Iteration   9: 0.027 s/op
+[info] # Warmup Iteration  10: 0.027 s/op
+[info] # Warmup Iteration  11: 0.026 s/op
+[info] # Warmup Iteration  12: 0.028 s/op
+[info] # Warmup Iteration  13: 0.029 s/op
+[info] # Warmup Iteration  14: 0.027 s/op
+[info] # Warmup Iteration  15: 0.029 s/op
+[info] # Warmup Iteration  16: 0.027 s/op
+[info] # Warmup Iteration  17: 0.031 s/op
+[info] # Warmup Iteration  18: 0.029 s/op
+[info] # Warmup Iteration  19: 0.026 s/op
+[info] # Warmup Iteration  20: 0.026 s/op
+[info] # Warmup Iteration  21: 0.028 s/op
+[info] # Warmup Iteration  22: 0.028 s/op
+[info] # Warmup Iteration  23: 0.026 s/op
+[info] # Warmup Iteration  24: 0.026 s/op
+[info] # Warmup Iteration  25: 0.027 s/op
+[info] # Warmup Iteration  26: 0.026 s/op
+[info] # Warmup Iteration  27: 0.026 s/op
+[info] # Warmup Iteration  28: 0.026 s/op
+[info] # Warmup Iteration  29: 0.026 s/op
+[info] # Warmup Iteration  30: 0.026 s/op
+[info] Iteration   1: 0.026 s/op
+[info] Iteration   2: 0.026 s/op
+[info] Iteration   3: 0.026 s/op
+[info] Iteration   4: 0.026 s/op
+[info] Iteration   5: 0.026 s/op
+[info] Iteration   6: 0.027 s/op
+[info] Iteration   7: 0.028 s/op
+[info] Iteration   8: 0.026 s/op
+[info] Iteration   9: 0.029 s/op
+[info] Iteration  10: 0.027 s/op
+[info] Iteration  11: 0.026 s/op
+[info] Iteration  12: 0.026 s/op
+[info] Iteration  13: 0.028 s/op
+[info] Iteration  14: 0.026 s/op
+[info] Iteration  15: 0.028 s/op
+[info] Iteration  16: 0.026 s/op
+[info] Iteration  17: 0.026 s/op
+[info] Iteration  18: 0.026 s/op
+[info] Iteration  19: 0.026 s/op
+[info] Iteration  20: 0.026 s/op
+[info] Iteration  21: 0.029 s/op
+[info] Iteration  22: 0.026 s/op
+[info] Iteration  23: 0.029 s/op
+[info] Iteration  24: 0.026 s/op
+[info] Iteration  25: 0.026 s/op
+[info] Iteration  26: 0.026 s/op
+[info] Iteration  27: 0.026 s/op
+[info] Iteration  28: 0.026 s/op
+[info] Iteration  29: 0.027 s/op
+[info] Iteration  30: 0.026 s/op
+[info] Iteration  31: 0.029 s/op
+[info] Iteration  32: 0.026 s/op
+[info] Iteration  33: 0.027 s/op
+[info] Iteration  34: 0.026 s/op
+[info] Iteration  35: 0.027 s/op
+[info] Iteration  36: 0.026 s/op
+[info] Iteration  37: 0.026 s/op
+[info] Iteration  38: 0.029 s/op
+[info] Iteration  39: 0.026 s/op
+[info] Iteration  40: 0.029 s/op
+[info] Iteration  41: 0.026 s/op
+[info] Iteration  42: 0.026 s/op
+[info] Iteration  43: 0.026 s/op
+[info] Iteration  44: 0.026 s/op
+[info] Iteration  45: 0.026 s/op
+[info] Iteration  46: 0.026 s/op
+[info] Iteration  47: 0.031 s/op
+[info] Iteration  48: 0.027 s/op
+[info] Iteration  49: 0.029 s/op
+[info] Iteration  50: 0.026 s/op
+[info] 
+[info] 
+[info] Result "union1M_E_O":
+[info]   0.027 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.026, 0.027, 0.031), stdev = 0.001
+[info]   CI (99.9%): [0.026, 0.027] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.union1M_Rand
+[info] 
+[info] # Run progress: 86.67% complete, ETA 00:03:12
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.105 s/op
+[info] # Warmup Iteration   2: 0.069 s/op
+[info] # Warmup Iteration   3: 0.068 s/op
+[info] # Warmup Iteration   4: 0.069 s/op
+[info] # Warmup Iteration   5: 0.065 s/op
+[info] # Warmup Iteration   6: 0.067 s/op
+[info] # Warmup Iteration   7: 0.061 s/op
+[info] # Warmup Iteration   8: 0.146 s/op
+[info] # Warmup Iteration   9: 0.063 s/op
+[info] # Warmup Iteration  10: 0.062 s/op
+[info] # Warmup Iteration  11: 0.060 s/op
+[info] # Warmup Iteration  12: 0.061 s/op
+[info] # Warmup Iteration  13: 0.065 s/op
+[info] # Warmup Iteration  14: 0.061 s/op
+[info] # Warmup Iteration  15: 0.060 s/op
+[info] # Warmup Iteration  16: 0.059 s/op
+[info] # Warmup Iteration  17: 0.060 s/op
+[info] # Warmup Iteration  18: 0.060 s/op
+[info] # Warmup Iteration  19: 0.065 s/op
+[info] # Warmup Iteration  20: 0.061 s/op
+[info] # Warmup Iteration  21: 0.059 s/op
+[info] # Warmup Iteration  22: 0.065 s/op
+[info] # Warmup Iteration  23: 0.065 s/op
+[info] # Warmup Iteration  24: 0.060 s/op
+[info] # Warmup Iteration  25: 0.060 s/op
+[info] # Warmup Iteration  26: 0.060 s/op
+[info] # Warmup Iteration  27: 0.060 s/op
+[info] # Warmup Iteration  28: 0.060 s/op
+[info] # Warmup Iteration  29: 0.065 s/op
+[info] # Warmup Iteration  30: 0.059 s/op
+[info] Iteration   1: 0.059 s/op
+[info] Iteration   2: 0.060 s/op
+[info] Iteration   3: 0.061 s/op
+[info] Iteration   4: 0.060 s/op
+[info] Iteration   5: 0.060 s/op
+[info] Iteration   6: 0.060 s/op
+[info] Iteration   7: 0.061 s/op
+[info] Iteration   8: 0.060 s/op
+[info] Iteration   9: 0.060 s/op
+[info] Iteration  10: 0.061 s/op
+[info] Iteration  11: 0.061 s/op
+[info] Iteration  12: 0.060 s/op
+[info] Iteration  13: 0.060 s/op
+[info] Iteration  14: 0.060 s/op
+[info] Iteration  15: 0.059 s/op
+[info] Iteration  16: 0.060 s/op
+[info] Iteration  17: 0.060 s/op
+[info] Iteration  18: 0.065 s/op
+[info] Iteration  19: 0.060 s/op
+[info] Iteration  20: 0.059 s/op
+[info] Iteration  21: 0.060 s/op
+[info] Iteration  22: 0.061 s/op
+[info] Iteration  23: 0.060 s/op
+[info] Iteration  24: 0.065 s/op
+[info] Iteration  25: 0.065 s/op
+[info] Iteration  26: 0.060 s/op
+[info] Iteration  27: 0.060 s/op
+[info] Iteration  28: 0.066 s/op
+[info] Iteration  29: 0.064 s/op
+[info] Iteration  30: 0.061 s/op
+[info] Iteration  31: 0.060 s/op
+[info] Iteration  32: 0.060 s/op
+[info] Iteration  33: 0.060 s/op
+[info] Iteration  34: 0.059 s/op
+[info] Iteration  35: 0.061 s/op
+[info] Iteration  36: 0.061 s/op
+[info] Iteration  37: 0.065 s/op
+[info] Iteration  38: 0.059 s/op
+[info] Iteration  39: 0.062 s/op
+[info] Iteration  40: 0.064 s/op
+[info] Iteration  41: 0.060 s/op
+[info] Iteration  42: 0.066 s/op
+[info] Iteration  43: 0.060 s/op
+[info] Iteration  44: 0.060 s/op
+[info] Iteration  45: 0.060 s/op
+[info] Iteration  46: 0.060 s/op
+[info] Iteration  47: 0.065 s/op
+[info] Iteration  48: 0.059 s/op
+[info] Iteration  49: 0.060 s/op
+[info] Iteration  50: 0.065 s/op
+[info] 
+[info] 
+[info] Result "union1M_Rand":
+[info]   0.061 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.059, 0.061, 0.066), stdev = 0.002
+[info]   CI (99.9%): [0.060, 0.062] (assumes normal distribution)
+[info] 
+[info] 
+[info] # JMH 1.11.3 (released 134 days ago, please consider updating!)
+[info] # VM version: JDK 1.8.0_77, VM 25.77-b03
+[info] # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
+[info] # VM options: <none>
+[info] # Warmup: 30 iterations, 1 s each
+[info] # Measurement: 50 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: scalaz.MapBenchmark.union1M_Rand2
+[info] 
+[info] # Run progress: 93.33% complete, ETA 00:01:35
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 0.084 s/op
+[info] # Warmup Iteration   2: 0.052 s/op
+[info] # Warmup Iteration   3: 0.051 s/op
+[info] # Warmup Iteration   4: 0.056 s/op
+[info] # Warmup Iteration   5: 0.049 s/op
+[info] # Warmup Iteration   6: 0.057 s/op
+[info] # Warmup Iteration   7: 0.046 s/op
+[info] # Warmup Iteration   8: 0.113 s/op
+[info] # Warmup Iteration   9: 0.046 s/op
+[info] # Warmup Iteration  10: 0.044 s/op
+[info] # Warmup Iteration  11: 0.047 s/op
+[info] # Warmup Iteration  12: 0.047 s/op
+[info] # Warmup Iteration  13: 0.044 s/op
+[info] # Warmup Iteration  14: 0.043 s/op
+[info] # Warmup Iteration  15: 0.047 s/op
+[info] # Warmup Iteration  16: 0.047 s/op
+[info] # Warmup Iteration  17: 0.043 s/op
+[info] # Warmup Iteration  18: 0.044 s/op
+[info] # Warmup Iteration  19: 0.048 s/op
+[info] # Warmup Iteration  20: 0.044 s/op
+[info] # Warmup Iteration  21: 0.048 s/op
+[info] # Warmup Iteration  22: 0.044 s/op
+[info] # Warmup Iteration  23: 0.043 s/op
+[info] # Warmup Iteration  24: 0.044 s/op
+[info] # Warmup Iteration  25: 0.044 s/op
+[info] # Warmup Iteration  26: 0.044 s/op
+[info] # Warmup Iteration  27: 0.044 s/op
+[info] # Warmup Iteration  28: 0.044 s/op
+[info] # Warmup Iteration  29: 0.044 s/op
+[info] # Warmup Iteration  30: 0.044 s/op
+[info] Iteration   1: 0.046 s/op
+[info] Iteration   2: 0.047 s/op
+[info] Iteration   3: 0.048 s/op
+[info] Iteration   4: 0.043 s/op
+[info] Iteration   5: 0.047 s/op
+[info] Iteration   6: 0.045 s/op
+[info] Iteration   7: 0.045 s/op
+[info] Iteration   8: 0.044 s/op
+[info] Iteration   9: 0.044 s/op
+[info] Iteration  10: 0.043 s/op
+[info] Iteration  11: 0.047 s/op
+[info] Iteration  12: 0.047 s/op
+[info] Iteration  13: 0.044 s/op
+[info] Iteration  14: 0.043 s/op
+[info] Iteration  15: 0.044 s/op
+[info] Iteration  16: 0.044 s/op
+[info] Iteration  17: 0.043 s/op
+[info] Iteration  18: 0.044 s/op
+[info] Iteration  19: 0.044 s/op
+[info] Iteration  20: 0.043 s/op
+[info] Iteration  21: 0.048 s/op
+[info] Iteration  22: 0.048 s/op
+[info] Iteration  23: 0.044 s/op
+[info] Iteration  24: 0.044 s/op
+[info] Iteration  25: 0.047 s/op
+[info] Iteration  26: 0.044 s/op
+[info] Iteration  27: 0.044 s/op
+[info] Iteration  28: 0.047 s/op
+[info] Iteration  29: 0.043 s/op
+[info] Iteration  30: 0.044 s/op
+[info] Iteration  31: 0.044 s/op
+[info] Iteration  32: 0.045 s/op
+[info] Iteration  33: 0.047 s/op
+[info] Iteration  34: 0.043 s/op
+[info] Iteration  35: 0.047 s/op
+[info] Iteration  36: 0.044 s/op
+[info] Iteration  37: 0.043 s/op
+[info] Iteration  38: 0.043 s/op
+[info] Iteration  39: 0.044 s/op
+[info] Iteration  40: 0.044 s/op
+[info] Iteration  41: 0.043 s/op
+[info] Iteration  42: 0.043 s/op
+[info] Iteration  43: 0.044 s/op
+[info] Iteration  44: 0.044 s/op
+[info] Iteration  45: 0.043 s/op
+[info] Iteration  46: 0.044 s/op
+[info] Iteration  47: 0.044 s/op
+[info] Iteration  48: 0.044 s/op
+[info] Iteration  49: 0.044 s/op
+[info] Iteration  50: 0.047 s/op
+[info] 
+[info] 
+[info] Result "union1M_Rand2":
+[info]   0.045 ±(99.9%) 0.001 s/op [Average]
+[info]   (min, avg, max) = (0.043, 0.045, 0.048), stdev = 0.002
+[info]   CI (99.9%): [0.044, 0.045] (assumes normal distribution)
+[info] 
+[info] 
+[info] # Run complete. Total time: 00:23:42
+[info] 
+[info] Benchmark                          Mode  Cnt  Score    Error  Units
+[info] MapBenchmark.delete1M_Asc          avgt   50  0.217 ±  0.013   s/op
+[info] MapBenchmark.delete1M_Dsc          avgt   50  0.250 ±  0.006   s/op
+[info] MapBenchmark.delete1M_Rand         avgt   50  0.868 ±  0.019   s/op
+[info] MapBenchmark.difference1M_E_O      avgt   50  0.040 ±  0.001   s/op
+[info] MapBenchmark.difference1M_Rand     avgt   50  0.063 ±  0.001   s/op
+[info] MapBenchmark.difference1M_Rand2    avgt   50  0.053 ±  0.001   s/op
+[info] MapBenchmark.insert1M_Asc          avgt   50  0.398 ±  0.009   s/op
+[info] MapBenchmark.insert1M_Dsc          avgt   50  0.380 ±  0.009   s/op
+[info] MapBenchmark.insert1M_Rand         avgt   50  0.936 ±  0.034   s/op
+[info] MapBenchmark.intersection1M_E_O    avgt   50  0.020 ±  0.001   s/op
+[info] MapBenchmark.intersection1M_Rand   avgt   50  0.032 ±  0.001   s/op
+[info] MapBenchmark.intersection1M_Rand2  avgt   50  0.074 ±  0.001   s/op
+[info] MapBenchmark.union1M_E_O           avgt   50  0.027 ±  0.001   s/op
+[info] MapBenchmark.union1M_Rand          avgt   50  0.061 ±  0.001   s/op
+[info] MapBenchmark.union1M_Rand2         avgt   50  0.045 ±  0.001   s/op
+[[32msuccess] Total time: 1438 s, completed 2016/05/27 1:40:52

@@ -664,7 +664,7 @@ sealed abstract class ==>>[A, B] {
     unionWithKey(other)((_: A, b: B, c: B) => f(b, c))
 
   def unionWithKey(other: A ==>> B)(f: (A, B, B) => B)(implicit o: Order[A]): A ==>> B =
-    mergeWithKey((x: A ==>> B) => x, (x: A ==>> B) => x)((a, b, c) => some(f(a, b, c)))(this, other)
+    mergeWithKey(this, other)(x => x, x => x)((a, b, c) => some(f(a, b, c)))
 
   // Difference functions
   def \\[C](other: A ==>> C)(implicit o: Order[A]): A ==>> B =
@@ -698,7 +698,7 @@ sealed abstract class ==>>[A, B] {
     differenceWithKey(other, (_: A, b: B, c: C) => f(b, c))
 
   def differenceWithKey[C](other: A ==>> C, f: (A, B, C) => Option[B])(implicit o: Order[A]): A ==>> B =
-    mergeWithKey((x: A ==>> B) => x, (_: A ==>> C) => empty[A, B])(f)(this, other)
+    mergeWithKey(this, other)(x => x, _ => empty[A, B])(f)
 
   // Intersections
   def intersection[C](other: A ==>> C)(implicit o: Order[A]): A ==>> B = {
@@ -728,7 +728,7 @@ sealed abstract class ==>>[A, B] {
     intersectionWithKey(other)((_, x, y: C) => f(x, y))
 
   def intersectionWithKey[C, D](other: A ==>> C)(f: (A, B, C) => D)(implicit o: Order[A]): A ==>> D =
-    mergeWithKey((_: A ==>> B) => empty[A, D], (_: A ==>> C) => empty[A, D])((a, b, c) => some(f(a, b, c)))(this, other)
+    mergeWithKey(this, other)(_ => empty[A, D], _ => empty[A, D])((a, b, c) => some(f(a, b, c)))
 
   // Submap
   def isSubmapOf(a: A ==>> B)(implicit o: Order[A], e: Equal[B]): Boolean =
@@ -1507,7 +1507,7 @@ object ==>> extends MapInstances {
   -- 'differenceWithKey', 'intersectionWith', 'intersectionWithKey' and can be
   -- used to define other custom combine functions.
 
-  -- When calling mergeWithKey(g1, g2)(f)(a, b), a function combining two
+  -- When calling mergeWithKey(a, b)(g1, g2)(f), a function combining two
   -- 'Map's is created, such that
   --
   -- * if a key is present in both maps, it is passed with both corresponding
@@ -1520,15 +1520,16 @@ object ==>> extends MapInstances {
   -- * a nonempty subtree present only in the second map is passed to @g2@ and
   --   the output is added to the result.
   *
+  *  @param  a   first map
+  *  @param  b   second map
   *  @param  g1  function applied to a nonempty subtree present only in the first map a
   *  @param  g2  function applied to a nonempty subtree present only in the second map b
   *  @param  f   combine function used to define `XxxWithKey`
-  *  @param  a   first map
-  *  @param  b   second map
   */
-  def mergeWithKey[A: Order, B, C, D](g1: (A ==>> B) => (A ==>> D), g2: (A ==>> C) => (A ==>> D))
+  def mergeWithKey[A: Order, B, C, D](a: A ==>> B, b: A ==>> C)
+                                     (g1: (A ==>> B) => (A ==>> D), g2: (A ==>> C) => (A ==>> D))
                                      (f: (A, B, C) => Option[D])
-                                     (a: A ==>> B, b: A ==>> C)(implicit o: Order[A]): A ==>> D = {
+                                     (implicit o: Order[A]): A ==>> D = {
     def hedgeMerge(blo: Option[A], bhi: Option[A], a: A ==>> B, b: A ==>> C): A ==>> D = {
       (a, b) match {
         case (t1, Tip()) => g1(t1)

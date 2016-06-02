@@ -661,7 +661,7 @@ sealed abstract class ==>>[A, B] {
   }
 
   def unionWith(other: A ==>> B)(f: (B, B) => B)(implicit o: Order[A]): A ==>> B =
-    unionWithKey(other)((_: A, b: B, c: B) => f(b, c))
+    unionWithKey(other)((_, b, c) => f(b, c))
 
   def unionWithKey(other: A ==>> B)(f: (A, B, B) => B)(implicit o: Order[A]): A ==>> B =
     mergeWithKey(this, other)((a, b, c) => some(f(a, b, c)))(x => x, x => x)
@@ -695,7 +695,7 @@ sealed abstract class ==>>[A, B] {
   }
 
   def differenceWith[C](other: A ==>> C, f: (B, C) => Option[B])(implicit o: Order[A]): A ==>> B =
-    differenceWithKey(other, (_: A, b: B, c: C) => f(b, c))
+    differenceWithKey(other, (_, b, c: C) => f(b, c))
 
   def differenceWithKey[C](other: A ==>> C, f: (A, B, C) => Option[B])(implicit o: Order[A]): A ==>> B =
     mergeWithKey(this, other)(f)(x => x, _ => empty)
@@ -725,7 +725,7 @@ sealed abstract class ==>>[A, B] {
   }
 
   def intersectionWith[C, D](other: A ==>> C)(f: (B, C) => D)(implicit o: Order[A]): A ==>> D =
-    intersectionWithKey(other)((_, x, y: C) => f(x, y))
+    intersectionWithKey(other)((_, x, y) => f(x, y))
 
   def intersectionWithKey[C, D](other: A ==>> C)(f: (A, B, C) => D)(implicit o: Order[A]): A ==>> D =
     mergeWithKey(this, other)((a, b, c) => some(f(a, b, c)))(_ => empty, _ => empty)

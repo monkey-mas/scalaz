@@ -102,8 +102,22 @@ sealed abstract class ==>>[A, B] {
     adjustWithKey(k, (_, x) => f(x))
 
   /** like [[adjust]] but with the key available in the transformation - O(log n) */
-  def adjustWithKey(k: A, f: (A, B) => B)(implicit o: Order[A]): A ==>> B =
-    updateWithKey(k, (a, b) => some(f(a, b)))
+  def adjustWithKey(k: A, f: (A, B) => B)(implicit o: Order[A]): A ==>> B = {
+    def go(k: A, f: (A, B) => B, m: A ==>> B): A ==>> B = m match {
+      case Tip() =>
+        empty
+      case Bin(kx, x, l, r) =>
+        o.order(k, kx) match {
+          case LT =>
+            Bin(kx, x, go(k, f, l), r)
+          case GT =>
+            Bin(kx, x, l, go(k, f, r))
+          case EQ =>
+            Bin(kx, f(kx, x), l, r)
+        }
+    }
+    go(k, f, this)
+  }
 
   /** updates or removes a value - O(log n)
    *

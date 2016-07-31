@@ -584,6 +584,30 @@ object MapTest extends SpecLite {
       empty[Int, String].adjust(7, f) must_===(empty[Int, String])
     }
 
+    "adjust sound" ! forAll { m: Int ==>> Int =>
+      val f = 1 + (_: Int)
+      m match {
+        case Bin(_, _, _, _) =>
+          m.keys.foreach { k =>
+            val a = m.adjust(k, f)
+            structurallySound(a)
+            m.size must_=== a.size
+            a.toList.foreach { kva =>
+              val ka = kva._1
+              val va = kva._2
+              val v = m.lookup(ka).get
+              if (k == ka) {
+                va must_=== f(v)
+              }
+              else {
+                va must_=== v
+              }
+            }
+          }
+        case _ =>
+      }
+    }
+
     "adjustWithKey" in {
       val f = (k: Int, x: String) => k.toString + ":new " + x
 
